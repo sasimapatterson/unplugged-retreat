@@ -232,6 +232,33 @@ aside {
   justify-content: center;
   flex-flow: row wrap;
   align-items: center;
+  background-color: #527158;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Features */
@@ -424,16 +451,30 @@ features h2 {
     margin: 100px 0;
   }
 
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
   /* Header */
 
   header {
     justify-content: space-around;
-    padding: 33px;
+    padding: 33px 0;
   }
 
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   header nav {
@@ -449,6 +490,12 @@ features h2 {
   }
 
   /* Hero Area */
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
 
   /* Aside */
   
@@ -467,6 +514,10 @@ features h2 {
 
   /* Features */
 
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
   .features article {
     display: flex;
     justify-content: center;
@@ -476,7 +527,7 @@ features h2 {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
 
   /* Reviews */
@@ -484,6 +535,15 @@ features h2 {
   .reviews article {
     display: flex;
     justify-content: space-between;
+  }
+
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
   }
 
   .reviews article div {
@@ -497,18 +557,24 @@ features h2 {
     margin: 100px 0;
   }
 
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  footer .content {
-    margin-bottom: 0;
+    flex-direction: row;
   }
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+    line-height: 1.285;
   }
 
   footer .copyright {
@@ -540,6 +606,10 @@ features h2 {
     align-items: flex-start;    
   }  
 
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
   /* =======================================================================
     FAQ Page
     ====================================================================== */
@@ -555,6 +625,12 @@ features h2 {
   .faq h2 {
     width: 100%;
   }
+
+  .faq h4, 
+  .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
 }
 
 /* ----------------------- End Tablets Styling -------------------------- */
@@ -562,14 +638,33 @@ features h2 {
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
 
+  header {
+    padding: 15px 0;
+  }
+
   .content-wrapper {
     max-width: 960px;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-heght: 1.333;
   }
 
   /* Hero */
     
   .hero-area h1 {
     width: 60%;
+    font-size: 3.75em;
   }
 
   /* Aside */
@@ -581,6 +676,10 @@ features h2 {
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 30%;
+  }
+
+  .form-description p {
+    font-size: 1.125em;
   }
 
   /* Features */
@@ -595,8 +694,16 @@ features h2 {
 
   /* Reviews */
 
+  .reviews h2 {
+    padding-bottow: 50px;
+  }
+
   .reviews article div {
     width: 42%;
+  }
+
+  footer h4 {
+    font-size: 1.875em;
   }
 
 /* =======================================================================
@@ -606,6 +713,11 @@ features h2 {
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+    font-size: 3em;
+  }
+
+  .contact-content h4 {
+    font-size: 1.875em;
   }
 
 /* ========================================================================
@@ -614,6 +726,13 @@ features h2 {
 
   .faq h2 {
     width: 100%;
+    font-size: 3em;
+  }
+
+  faq h4,
+  faq p {
+    font-size: 1.125em;
+    line-height: 1;
   }
 }
 
