@@ -5,46 +5,30 @@
   <meta charset="utf-8">
   <title>Unplugged Retreat</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
+  
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+ 
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:500,700" rel="stylesheet">
+  <!-- Fontawesome CDN version 5.5 -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
   <!-- Add your site or application content here -->
-  
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-
-
-    <header>
+     <header>
         <div class="content-wrapper">
             <figure>
                 <a href="#">
-                    <img src="img/unplugged-logo.jpg" alt="unplugged logo">
+                    <img src="img/unpluggedlogo.png" alt="unplugged logo">
                 </a>
             </figure>
             
@@ -147,7 +131,6 @@
     <footer>
         <div class="content-wrapper">
             <div class="footer-content">
-
                 <address class="contact">
                     <h4>Contact</h4>
                     <p>
@@ -155,7 +138,6 @@
                         hello@unplugged.com
                     </p>
                 </address>
-
                 <div class="social">
                     <h4>Social</h4>
                     <div class="social-icons">
@@ -177,5 +159,28 @@
             <p>Copyright 2020 | Unplugged</p>
         </div>
     </footer>
+
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+  
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments)
+      };
+      ga.q = [];
+      ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      ga('send', 'pageview')
+  
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script> 
 </body>
 </html>
