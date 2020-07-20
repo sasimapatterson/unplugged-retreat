@@ -308,7 +308,7 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-features h2 {
+.features h2 {
   margin-bottom: 60px;
 }
 
@@ -348,9 +348,9 @@ features h2 {
   margin: 20px 0;
 }
 
-/*  ===========================================================================
+/* ===========================================================================
     About Page
-    ======================================================================== */
+  ======================================================================== */
 
 .mission {
   background-color: #527158;
@@ -358,6 +358,22 @@ features h2 {
   justify-content: center;
   flex-flow: row wrap;
   align-items: center;
+}
+
+.map figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 125%;
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .contact-section {
@@ -708,13 +724,13 @@ features h2 {
 
   p {
     font-size: 1.125em;
-    line-heght: 1.333;
+    line-height: 1.333;
   }
 
   /* Hero */
     
   .hero-area h1 {
-    width: 60%;
+    width: 80%;
     font-size: 3.75em;
   }
 
@@ -746,7 +762,7 @@ features h2 {
   /* Reviews */
 
   .reviews h2 {
-    padding-bottow: 50px;
+    padding-bottom: 50px;
   }
 
   .reviews article div {
